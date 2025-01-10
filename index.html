@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur de Prix</title>
+</head>
+<body>
+    <h1>Calculateur de Prix</h1>
+    <form id="calculateur-form">
+        <label for="prix">Prix Unitaire :</label>
+        <input type="number" id="prix" placeholder="Entrez le prix unitaire" required><br><br>
+
+        <label for="count">Quantité :</label>
+        <input type="number" id="count" placeholder="Entrez la quantité" required><br><br>
+
+        <label for="state">État :</label>
+        <input type="text" id="state" placeholder="Entrez l'état (optionnel)"><br><br>
+
+        <button type="button" onclick="calculerPrix()">Calculer</button>
+    </form>
+
+    <h2>Résultats</h2>
+    <p id="resultat-prix">Prix Unitaire : -</p>
+    <p id="resultat-final">Prix Final : -</p>
+
+    <script src="main.js"></script>
+</body>
+</html>
